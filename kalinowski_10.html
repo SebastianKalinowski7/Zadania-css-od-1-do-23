@@ -1,0 +1,95 @@
+1. Wymień oraz opisz dwie części selektora
+Selektor składa się z dwóch głównych części:
+
+Selektor – wskazuje, do jakich elementów HTML ma zostać zastosowane formatowanie. Przykłady: p, h1, div, p b.
+
+Deklaracja – zawiera zbiór właściwości i ich wartości, zapisany w nawiasach klamrowych {...}.
+
+Przykład:
+
+css
+Kopiuj
+Edytuj
+p {
+  color: red;
+}
+Selektor: p
+
+Deklaracja: { color: red; }
+
+2. Znaczenie nawiasów klamrowych {...}
+Nawiasy klamrowe {...} otaczają deklarację, czyli zestaw właściwości (cech) i przypisanych im wartości.
+
+Dzięki nim przeglądarka wie, które właściwości mają zostać zastosowane do danego selektora.
+
+Przykład:
+
+css
+Kopiuj
+Edytuj
+h1 {
+  font-size: 24pt;
+  color: blue;
+}
+Tutaj { font-size: 24pt; color: blue; } to deklaracja otoczona nawiasami klamrowymi.
+
+3. Opisz cechy
+Cecha (ang. property) to konkretna właściwość formatowania, którą możemy przypisać elementowi HTML.
+
+Każdy znacznik HTML ma zestaw dopuszczalnych cech, np. color, font-size, background-color, text-align.
+
+Przykład:
+
+css
+Kopiuj
+Edytuj
+p {
+  text-align: justify;
+}
+Cecha: text-align
+
+Opis: wyrównanie tekstu (np. do lewej, do prawej, wyjustowane)
+
+4. Opisz wartości
+Wartość (ang. value) to konkretna wartość przypisana do cechy.
+
+Każda cecha ma określony zestaw dopuszczalnych wartości.
+
+Przykład:
+
+css
+Kopiuj
+Edytuj
+p {
+  color: red;
+}
+Cecha: color
+
+Wartość: red (czyli kolor czerwony)
+
+Niektóre cechy mogą przyjmować tylko określone wartości – np. text-align tylko: left, right, center, justify.
+
+5. Kiedy stosujemy znak średnika ;, a kiedy nie jest konieczny
+Znak średnika ; oddziela kolejne pary cecha–wartość w deklaracji.
+
+Zaleca się stosowanie średnika po każdej deklaracji, nawet gdy jest tylko jedna – dla czytelności i poprawności kodu.
+
+Nie jest obowiązkowy po ostatniej deklaracji w nawiasach, ale warto go stosować nawykowo.
+
+Przykład poprawny:
+
+css
+Kopiuj
+Edytuj
+h1 {
+  color: green;
+  font-size: 20pt;
+}
+Przykład bez średnika na końcu – technicznie poprawny, ale mniej czytelny:
+
+css
+Kopiuj
+Edytuj
+h1 {
+  color: green
+}
